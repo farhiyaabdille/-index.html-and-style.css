@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="logo.svg" alt="Budget Tracker wallet logo" width="72">
+    <div>
+      <p class="eyebrow">PERSONAL FINANCE</p>
+      <h1>Budget Tracker</h1>
+      <p>See where your money goes and plan with confidence.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary-grid" aria-label="Budget summary">
+      <article class="summary-card">
+        <h2>Monthly budget</h2>
+        <p class="summary-value">$2,500.00</p>
+      </article>
+      <article class="summary-card">
+        <h2>Total spent</h2>
+        <p class="summary-value">$1,240.50</p>
+      </article>
+      <article class="summary-card highlight">
+        <h2>Remaining</h2>
+        <p class="summary-value">$1,259.50</p>
+      </article>
+    </section>
+
+    <section class="expenses-section panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ACTIVITY</p>
+          <h2>Recent expenses</h2>
+        </div>
+        <span class="badge">5 records</span>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grocery shopping</td>
+              <td>$86.40</td>
+              <td>Food</td>
+              <td>2026-09-05</td>
+            </tr>
+            <tr>
+              <td>Bus pass</td>
+              <td>$42.00</td>
+              <td>Transport</td>
+              <td>2026-09-07</td>
+            </tr>
+            <tr>
+              <td>Apartment rent</td>
+              <td>$900.00</td>
+              <td>Rent</td>
+              <td>2026-09-01</td>
+            </tr>
+            <tr>
+              <td>Movie night</td>
+              <td>$34.10</td>
+              <td>Entertainment</td>
+              <td>2026-09-09</td>
+            </tr>
+            <tr>
+              <td>Phone charger</td>
+              <td>$28.00</td>
+              <td>Other</td>
+              <td>2026-09-10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="add-expense-section panel">
+      <p class="eyebrow">QUICK ENTRY</p>
+      <h2>Add an expense</h2>
+      <form>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="expense-name">Expense name</label>
+            <input id="expense-name" name="expense-name" type="text" placeholder="e.g. Coffee">
+          </div>
+          <div class="form-field">
+            <label for="expense-amount">Amount</label>
+            <input id="expense-amount" name="expense-amount" type="number" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="form-field">
+            <label for="expense-category">Category</label>
+            <select id="expense-category" name="expense-category">
+              <option value="food">Food</option>
+              <option value="transport">Transport</option>
+              <option value="rent">Rent</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="expense-date">Date</label>
+            <input id="expense-date" name="expense-date" type="date">
+          </div>
+        </div>
+        <button type="button">Add Expense</button>
+      </form>
+    </section>
+
+    <section class="learning-grid">
+      <section class="video-section panel">
+        <p class="eyebrow">LEARN</p>
+        <h2>Budgeting inspiration</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQzoZfc3GwQ" title="A budgeting tips video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="help-section panel">
+        <details>
+          <summary>How to use this tracker</summary>
+          <p>Review your recent expenses, then use the form to record a name, amount, category, and date. The Add Expense button is ready for the JavaScript upgrade in a later week.</p>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <footer><p>Small steps today build stronger financial habits tomorrow.</p></footer>
+</body>
+</html>
