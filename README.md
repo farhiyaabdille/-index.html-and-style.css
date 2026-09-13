@@ -1,17 +1,25 @@
-# Budget Tracker — Week 2
+# Budget Tracker Dashboard
 
-This project is a responsive Budget Tracker built directly from the Week 1 foundation and upgraded with the Week 2 HTML and CSS requirements. The page includes a summary dashboard, a structured expense table, an upgraded add-expense form, multimedia learning content, and a collapsible help section.
+This project is a responsive personal Budget Tracker dashboard published with GitHub Pages. It began as a Week 1 HTML and CSS foundation and has grown into a modern dashboard with a sidebar navigation menu, monthly overview, six financial category cards, recent expenses, and an Add Expense form.
 
-## What each part does
+## What has been built so far
 
-- `index.html` provides the semantic page structure, five sample expense rows, the category dropdown, form controls, logo, YouTube iframe, and usage details.
-- `style.css` controls the visual design, responsive layout, table borders and alternating rows, hover and focus states, button interaction, and advanced CSS selectors.
-- `logo.svg` is the small wallet logo displayed beside the heading.
+The current version uses semantic HTML and responsive CSS. It includes a custom color theme, Google Fonts typography, CSS Grid for the dashboard and category cards, Flexbox for navigation and header content, table styling, form styling, hover and keyboard-focus micro-interactions, a favicon, Open Graph metadata, and a dark-theme variable override for users who prefer dark mode. The data is currently static so the page can focus on layout, accessibility, and visual design.
 
-## How to view it
+## Live site
 
-Open `index.html` in a web browser. The Add Expense button is intentionally `type="button"` and does not save data yet; JavaScript functionality will be added in a later week.
+The project is published at:
 
-## Week 2 requirements demonstrated
+https://farhiyaabdille.github.io/-index.html-and-style.css/
 
-The expense table uses `thead`, `tbody`, `tr`, `th`, and `td`. The form uses matching `for` and `id` attributes and a five-option `select`. The page also uses a descendant selector, direct-child selector, positional pseudo-classes, a negation pseudo-class, and an input focus state.
+## How to run locally
+
+Open `index.html` in a browser, or serve the folder with a local web server such as `python3 -m http.server`. The project uses `logo.svg` for its favicon and dashboard logo, while `style.css` contains the complete responsive visual system.
+
+## Testing and feedback
+
+The layout was checked at desktop and narrow mobile widths using the responsive breakpoint below 768px. The dashboard changes from a sidebar-and-content grid into a single-column mobile layout, with the navigation becoming horizontally scrollable. For the required outside feedback, ask a classmate, friend, or family member to open the live link and comment on readability, navigation clarity, and mobile spacing; record their feedback in the next project update.
+
+## Coming next
+
+JavaScript functionality starts next week. The Add Expense form will then be connected to the expense table so users can enter new records, update totals, and interact with their budget data instead of viewing static sample information.
